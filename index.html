@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Greetings, Pokémon Trainer!</h1>
+    <p id="description">
+      "Hello there! Welcome to the world of Pokémon! My name is Oak! People call
+      me the Pokémon Prof! This world is inhabited by creatures called Pokémon!
+      For some people, Pokémon are pets. Other use them for fights. Myself… I
+      study Pokémon as a profession.
+    </p>
+    <form id="survey-form" class="" action="index.html">
+      <label id="name-label">
+        First, what is your name?
+        <input
+          type="text"
+          id="name"
+          name=""
+          value=""
+          placeholder="type here..."
+          required
+        />
+      </label>
+      <label id="email-label"
+        >This is my grandson. He's been your rival since you were a baby. …Erm,
+        what is his name again?
+        <input
+          type="email"
+          id="email"
+          name=""
+          value=""
+          placeholder="type here..."
+          required
+        />
+      </label>
+      <label id="number-label">
+        How old are you?
+        <input
+          type="number"
+          id="number"
+          name=""
+          value=""
+          placeholder="0"
+          min="0"
+          max="120"
+        />
+      </label>
+      And what town are you from?
+      <select id="dropdown" class="" name="town">
+        <option value="pallet">Pallet Town</option>
+        <option value="viridian">Viridian City</option>
+        <option value="pewter">Pewter City</option>
+        <option value="cerulean">Cerulean City</option>
+        <option value="vermilion">Vermilion City</option>
+        <option value="lavender">Lavender Town</option>
+        <option value="celadon">Celadon City</option>
+        <option value="fuchsia">Fuchsia City</option>
+        <option value="saffron">Saffron City</option>
+        <option value="cinnabar">Cinnabar Island</option>
+      </select>
+      <p>Now, player, which Pokémon do you want?"</p>
+      <label>
+        <input type="radio" name="starter" value="charmander" class="" />
+        Charmander
+      </label>
+      <label>
+        <input type="radio" name="starter" value="squirtle" class="" />
+        Squirtle
+      </label>
+      <label>
+        <input type="radio" name="starter" value="bulbasaur" class="" />
+        Bulbasaur
+      </label>
+      <label>
+        What would you like to nickname your Pokémon?
+        <textarea
+          name="bio"
+          rows="1"
+          cols="12"
+          placeholder="Type here..."
+        ></textarea>
+      </label>
+      <p>
+        You understand that being a Pokémon trainer is a serious responsibility?
+      </p>
+      <label>
+        <input type="checkbox" value="c" />
+        I wanna be the very best, like no one ever was.
+      </label>
+      <label>
+        <input type="checkbox" value="d" />
+        To catch them is my real test. To train them is my cause.
+      </label>
+      <label>
+        <input type="checkbox" value="d" />
+        I will travel across the land, searching far and wide.
+      </label>
+      <label>
+        <input type="checkbox" value="d" />
+        Teach Pokémon to understand the power that's inside!
+      </label>
+      <p>
+        Your very own Pokémon legend is about to unfold! A world of dreams and
+        adventures with Pokémon awaits!"
+      </p>
+      <input type="submit" value="Let's go!" id="submit" />
+    </form>
+  </body>
+</html>
