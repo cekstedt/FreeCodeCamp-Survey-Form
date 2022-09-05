@@ -7,107 +7,185 @@
   </head>
   <body>
     <h1 id="title">Greetings, Pokémon Trainer!</h1>
-    <p id="description">
-      "Hello there! Welcome to the world of Pokémon! My name is Oak! People call
-      me the Pokémon Prof! This world is inhabited by creatures called Pokémon!
-      For some people, Pokémon are pets. Other use them for fights. Myself… I
-      study Pokémon as a profession.
-    </p>
-    <form id="survey-form" class="" action="index.html">
-      <label id="name-label">
-        First, what is your name?
-        <input
-          type="text"
-          id="name"
-          name=""
-          value=""
-          placeholder="type here..."
-          required
+    <main>
+      <div class="avatarBlock">
+        <img
+          src="images/oak.png"
+          alt="Professor Oak"
+          class="avatarBlock-avatar"
         />
-      </label>
-      <label id="email-label"
-        >This is my grandson. He's been your rival since you were a baby. …Erm,
-        what is his name again?
-        <input
-          type="email"
-          id="email"
-          name=""
-          value=""
-          placeholder="type here..."
-          required
-        />
-      </label>
-      <label id="number-label">
-        How old are you?
-        <input
-          type="number"
-          id="number"
-          name=""
-          value=""
-          placeholder="0"
-          min="0"
-          max="120"
-        />
-      </label>
-      And what town are you from?
-      <select id="dropdown" class="" name="town">
-        <option value="pallet">Pallet Town</option>
-        <option value="viridian">Viridian City</option>
-        <option value="pewter">Pewter City</option>
-        <option value="cerulean">Cerulean City</option>
-        <option value="vermilion">Vermilion City</option>
-        <option value="lavender">Lavender Town</option>
-        <option value="celadon">Celadon City</option>
-        <option value="fuchsia">Fuchsia City</option>
-        <option value="saffron">Saffron City</option>
-        <option value="cinnabar">Cinnabar Island</option>
-      </select>
-      <p>Now, player, which Pokémon do you want?"</p>
-      <label>
-        <input type="radio" name="starter" value="charmander" class="" />
-        Charmander
-      </label>
-      <label>
-        <input type="radio" name="starter" value="squirtle" class="" />
-        Squirtle
-      </label>
-      <label>
-        <input type="radio" name="starter" value="bulbasaur" class="" />
-        Bulbasaur
-      </label>
-      <label>
-        What would you like to nickname your Pokémon?
-        <textarea
-          name="bio"
-          rows="1"
-          cols="12"
-          placeholder="Type here..."
-        ></textarea>
-      </label>
-      <p>
-        You understand that being a Pokémon trainer is a serious responsibility?
-      </p>
-      <label>
-        <input type="checkbox" value="c" />
-        I wanna be the very best, like no one ever was.
-      </label>
-      <label>
-        <input type="checkbox" value="d" />
-        To catch them is my real test. To train them is my cause.
-      </label>
-      <label>
-        <input type="checkbox" value="d" />
-        I will travel across the land, searching far and wide.
-      </label>
-      <label>
-        <input type="checkbox" value="d" />
-        Teach Pokémon to understand the power that's inside!
-      </label>
-      <p>
-        Your very own Pokémon legend is about to unfold! A world of dreams and
-        adventures with Pokémon awaits!"
-      </p>
-      <input type="submit" value="Let's go!" id="submit" />
-    </form>
+        <p id="description" class="avatarBlock-content dialogue">
+          "Hello there! Welcome to the world of Pokémon! My name is Oak! People
+          call me the Pokémon Prof! This world is inhabited by creatures called
+          Pokémon! For some people, Pokémon are pets. Other use them for fights.
+          Myself… I study Pokémon as a profession."
+        </p>
+      </div>
+      <form id="survey-form" action="index.html">
+        <fieldset class="avatarBlock">
+          <img
+            src="images/player.png"
+            alt="player"
+            class="avatarBlock-avatar"
+          />
+          <div class="avatarBlock-content">
+            <label id="name-label" for="name" class="dialogue">
+              "First, what is your name?"
+            </label>
+            <input
+              type="text"
+              id="name"
+              name=""
+              value=""
+              placeholder="_"
+              required
+            />
+            <label id="email-label" for="email" class="dialogue">
+              "What is your email?"
+            </label>
+            <input
+              type="email"
+              id="email"
+              name=""
+              value=""
+              placeholder="_"
+              required
+            />
+            <label id="number-label" for="number" class="dialogue">
+              "How old are you?"
+            </label>
+            <input
+              type="number"
+              id="number"
+              name=""
+              value=""
+              placeholder="_"
+              min="0"
+              max="120"
+            />
+            <label id="dropdown-label" for="dropdown" class="dialogue">
+              "And which town are you from?"
+            </label>
+            <select id="dropdown" class="" name="town">
+              <option value="">_</option>
+              <option value="pallet">Pallet Town</option>
+              <option value="viridian">Viridian City</option>
+              <option value="pewter">Pewter City</option>
+              <option value="cerulean">Cerulean City</option>
+              <option value="vermilion">Vermilion City</option>
+              <option value="lavender">Lavender Town</option>
+              <option value="celadon">Celadon City</option>
+              <option value="fuchsia">Fuchsia City</option>
+              <option value="saffron">Saffron City</option>
+              <option value="cinnabar">Cinnabar Island</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset class="avatarBlock">
+          <img src="images/rival.png" alt="rival" class="avatarBlock-avatar" />
+          <div class="avatarBlock-content">
+            <label id="rival-label" for="rival" class="dialogue">
+              "This is my grandson. He's been your rival since you were a baby.
+              …Erm, what is his name again?"
+            </label>
+            <input
+              type="text"
+              id="rival"
+              name=""
+              value=""
+              placeholder="_"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="dialogue">"Now, player, which Pokémon do you want?"</p>
+          <div class="grid">
+            <div class="imgRadio">
+              <input
+                type="radio"
+                name="starter"
+                value="charmander"
+                id="charmander"
+              />
+              <label for="charmander">
+                <img src="images/charmander.png" alt="charmander" />
+              </label>
+            </div>
+            <div class="imgRadio">
+              <input
+                type="radio"
+                name="starter"
+                value="squirtle"
+                id="squirtle"
+              />
+              <label for="squirtle">
+                <img src="images/squirtle.png" alt="squirtle" />
+              </label>
+            </div>
+            <div class="imgRadio">
+              <input
+                type="radio"
+                name="starter"
+                value="bulbasaur"
+                id="bulbasaur"
+              />
+              <label for="bulbasaur">
+                <img src="images/bulbasaur.png" alt="bulbasaur" />
+              </label>
+            </div>
+          </div>
+          <div class="avatarBlock-content">
+            <label for="nickname" class="dialogue">
+              "What would you like to nickname your Pokémon?"
+            </label>
+            <textarea
+              name="nickname"
+              id="nickname"
+              rows="1"
+              cols="12"
+              placeholder="_"
+            ></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <p class="dialogue">
+            "You understand that being a Pokémon trainer is a serious
+            responsibility?"
+          </p>
+          <label class="checkbox">
+            <input type="checkbox" value="lyric-a" />
+            I wanna be the very best, like no one ever was.
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" value="lyric-b" />
+            To catch them is my real test. To train them is my cause.
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" value="lyric-c" />
+            I will travel across the land, searching far and wide.
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" value="lyric-d" />
+            Teach Pokémon to understand the power that's inside!
+          </label>
+        </fieldset>
+        <div class="avatarBlock">
+          <img
+            src="images/oak.png"
+            alt="Professor Oak"
+            class="avatarBlock-avatar"
+          />
+          <p class="avatarBlock-content dialogue">
+            "Your very own Pokémon legend is about to unfold! A world of dreams
+            and adventures with Pokémon awaits!"
+          </p>
+        </div>
+        <button type="submit" id="submit">
+          <span class="buttonIcon"></span>
+          Let's go!
+        </button>
+      </form>
+    </main>
   </body>
 </html>
